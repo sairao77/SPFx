@@ -1,0 +1,50 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "my-teams-client-side-solution",
+    "id": "4a60a21d-c5e9-471d-8eda-5591fbc7beff",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.17.4"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "My Teams description"
+      },
+      "longDescription": {
+        "default": "My Teams description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "my-teams Feature",
+        "description": "The feature that activates elements of the my-teams solution.",
+        "id": "fa473a1a-3bcb-45e4-ac19-9a364166046d",
+        "version": "1.0.0.0"
+      }
+    ],
+    "webApiPermissionRequests": [
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Teams.ReadBasic.All"
+      },
+      {
+        "resource": "Microsoft Graph",
+        "scope": "Group.Read.All"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/my-teams.sppkg"
+  }
+}

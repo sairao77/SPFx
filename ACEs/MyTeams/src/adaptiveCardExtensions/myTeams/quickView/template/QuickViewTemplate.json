@@ -1,0 +1,43 @@
+{
+  "schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.5",
+  "body": [{
+    "type":"Container",
+    "$data": "${Details}",
+    "separator": true,
+    "items": [{
+      "type": "ColumnSet",
+      "columns": [{
+        "type": "Column",
+        "items": [
+          {
+            "type": "TextBlock",
+            "text": "Name: ${displayName}"
+          }]
+      }]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [{
+        "type": "Column",
+        "items": [
+          {
+            "type": "TextBlock",
+            "text": "Description: ${description}"
+          }]
+      }]
+    },
+    {
+      "type": "ColumnSet",
+      "columns": [{
+        "type": "Column",
+        "items": [
+          {
+            "type": "TextBlock",
+            "text": "Membership Type: ${ownerormember}"
+          }]
+      }]
+    }]
+  }]
+}
